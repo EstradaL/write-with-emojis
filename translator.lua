@@ -24,9 +24,6 @@ for index = 1, 5 do
       line = line .. letters[letter][index]
     end
   end
-  -- for word_letter in word:gmatch('.') do
-  --   line = line .. letters[word_letter][index]
-  -- end
 
   print((line:gsub('¡', emoji):gsub('¿', space_emoji)))
 end
