@@ -1,15 +1,15 @@
 local letters = require('letters')
 
 print'Enter an emoji:'
-local emoji = io.read()
+local emoji = io.read():lower()
 
 print'Enter a second emoji or nothing for white space:'
-local space_emoji = io.read()
+local space_emoji = io.read():lower()
 
 if space_emoji == '' then space_emoji = 'empty_space' end
 
 print'Enter the word:'
-local word = io.read()
+local word = io.read():lower()
 
 for index = 1, 5 do
   local line = ''
