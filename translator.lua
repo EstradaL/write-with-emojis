@@ -1,10 +1,10 @@
 local letters = require('letters')
 
 print'Enter an emoji:'
-local emoji = io.read():lower()
+local emoji = io.read():lower():gsub(':', '')
 
 print'Enter a second emoji or nothing for white space:'
-local space_emoji = io.read():lower()
+local space_emoji = io.read():lower():gsub(':', '')
 
 if space_emoji == '' then space_emoji = 'empty_space' end
 
